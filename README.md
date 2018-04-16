@@ -1,9 +1,11 @@
 # SleepAnalysis_Fixers
 Sleep Pattern Analysis Using ELK Stack
+
 Pre-requisite:
 Main dependency for installing the ELK stack is Java. Make sure to install java 8 or above.
 
-Install ElasticSearch, Logstash and kibana. You can follow the steps included in the document. Check if all the installations are done perfectly.
+Install ElasticSearch, Logstash and kibana. You can follow the steps included in the document in Documentaion Folder. Check if all the installations are done perfectly.
+
 
 Configure Logstash
 Next configure the logstash, specify the following sections in the configuration file.
