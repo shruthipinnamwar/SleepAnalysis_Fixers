@@ -1,0 +1,52 @@
+# [2017] Elasticsearch Incorporated. All Rights Reserved.
+#
+# NOTICE:  All information contained herein is, and remains
+# the property of Elasticsearch Incorporated and its suppliers,
+# if any.  The intellectual and technical concepts contained
+# herein are proprietary to Elasticsearch Incorporated
+# and its suppliers and may be covered by U.S. and Foreign Patents,
+# patents in process, and are protected by trade secret or copyright law.
+# Dissemination of this information or reproduction of this material
+# is strictly forbidden unless prior written permission is obtained
+# from Elasticsearch Incorporated.
+#
+input {
+  metrics {
+    collection_interval => <%= collection_interval %>
+    collection_timeout_interval => <%= collection_timeout_interval %>
+    extended_performance_collection => <%= extended_performance_collection? %>
+    config_collection => <%= config_collection? %>
+  }
+}
+output {
+  elasticsearch {
+    hosts => <%= es_hosts %>
+    bulk_path => "/_xpack/monitoring/_bulk?system_id=logstash&system_api_version=<%= system_api_version %>&interval=1s"
+    manage_template => false
+    document_type => "%{[@metadata][document_type]}"
+    index => ""
+    sniffing => <%= sniffing %>
+  <% if auth? %>
+    user => "<%= user %>"
+    password => "<%= password %>"
+  <% end %>
+  <% if ssl? %>
+    ssl => true
+    <% if ca_path %>
+        cacert => "<%= ca_path %>"
+    <% end %>
+    <% if truststore? %>
+        truststore => "<%= truststore_path %>"
+        truststore_password => "<%= truststore_password %>"
+    <% end %>
+    <% if keystore? %>
+        keystore => "<%= keystore_path %>"
+        keystore_password => "<%= keystore_password %>"
+    <% end %>
+  <% else %>
+    # In the case where the user does not want SSL we don't set ssl => false
+    # the reason being that the user can still turn ssl on by using https in their URL
+    # This causes the ES output to throw an error due to conflicting messages
+  <% end %>
+  }
+}

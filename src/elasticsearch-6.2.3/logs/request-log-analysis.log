@@ -1,0 +1,813 @@
+[2018-04-12T14:48:29,989][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-04-12T14:48:30,062][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [102.2gb], net total_space [232.6gb], types [hfs]
+[2018-04-12T14:48:30,062][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-04-12T14:48:30,065][INFO ][o.e.n.Node               ] node name [zVEhyW1] derived from node ID [zVEhyW1oRbOBEzrlT6he4A]; set [node.name] to override
+[2018-04-12T14:48:30,065][INFO ][o.e.n.Node               ] version[6.2.3], pid[56233], build[c59ff00/2018-03-13T10:06:29.741383Z], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_101/25.101-b13]
+[2018-04-12T14:48:30,065][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/4k/nbxcfp6n19scrsv83b2bp94hk_ngnj/T/elasticsearch.izsmV3Qh, -XX:+HeapDumpOnOutOfMemoryError, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/ac044474/workspace/elasticsearch-6.2.3, -Des.path.conf=/Users/ac044474/workspace/elasticsearch-6.2.3/config]
+[2018-04-12T14:48:30,632][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [aggs-matrix-stats]
+[2018-04-12T14:48:30,632][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [analysis-common]
+[2018-04-12T14:48:30,632][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [ingest-common]
+[2018-04-12T14:48:30,632][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-expression]
+[2018-04-12T14:48:30,632][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-mustache]
+[2018-04-12T14:48:30,633][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-painless]
+[2018-04-12T14:48:30,633][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [mapper-extras]
+[2018-04-12T14:48:30,633][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [parent-join]
+[2018-04-12T14:48:30,633][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [percolator]
+[2018-04-12T14:48:30,633][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [rank-eval]
+[2018-04-12T14:48:30,633][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [reindex]
+[2018-04-12T14:48:30,633][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [repository-url]
+[2018-04-12T14:48:30,634][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [transport-netty4]
+[2018-04-12T14:48:30,634][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [tribe]
+[2018-04-12T14:48:30,634][INFO ][o.e.p.PluginsService     ] [zVEhyW1] no plugins loaded
+[2018-04-12T14:48:32,481][INFO ][o.e.d.DiscoveryModule    ] [zVEhyW1] using discovery type [zen]
+[2018-04-12T14:48:32,937][INFO ][o.e.n.Node               ] initialized
+[2018-04-12T14:48:32,937][INFO ][o.e.n.Node               ] [zVEhyW1] starting ...
+[2018-04-12T14:48:33,081][INFO ][o.e.t.TransportService   ] [zVEhyW1] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-04-12T14:48:36,130][INFO ][o.e.c.s.MasterService    ] [zVEhyW1] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{5gxyPDD4SbGtnLgEsQO6TQ}{127.0.0.1}{127.0.0.1:9300}
+[2018-04-12T14:48:36,134][INFO ][o.e.c.s.ClusterApplierService] [zVEhyW1] new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{5gxyPDD4SbGtnLgEsQO6TQ}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{5gxyPDD4SbGtnLgEsQO6TQ}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-04-12T14:48:36,244][INFO ][o.e.h.n.Netty4HttpServerTransport] [zVEhyW1] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-04-12T14:48:36,245][INFO ][o.e.n.Node               ] [zVEhyW1] started
+[2018-04-12T14:48:36,253][INFO ][o.e.g.GatewayService     ] [zVEhyW1] recovered [0] indices into cluster_state
+[2018-04-12T15:04:16,575][INFO ][o.e.c.m.MetaDataCreateIndexService] [zVEhyW1] [logstash-2018.04.12] creating index, cause [auto(bulk api)], templates [logstash], shards [5]/[1], mappings [_default_]
+[2018-04-12T15:04:16,834][INFO ][o.e.c.m.MetaDataMappingService] [zVEhyW1] [logstash-2018.04.12/IDKG_ue3Q_KcK4ITuk7Q8g] create_mapping [doc]
+[2018-04-12T15:16:50,831][INFO ][o.e.c.m.MetaDataCreateIndexService] [zVEhyW1] [.kibana] creating index, cause [auto(bulk api)], templates [kibana_index_template:.kibana], shards [1]/[1], mappings [doc]
+[2018-04-12T15:16:50,957][INFO ][o.e.c.m.MetaDataUpdateSettingsService] [zVEhyW1] updating number_of_replicas to [0] for indices [.kibana]
+[2018-04-12T15:16:50,967][INFO ][o.e.c.m.MetaDataUpdateSettingsService] [zVEhyW1] [.kibana/gd6KW7IwRuKokGf3L1x5Ug] auto expanded replicas to [0]
+[2018-04-12T15:16:53,006][INFO ][o.e.c.m.MetaDataMappingService] [zVEhyW1] [.kibana/gd6KW7IwRuKokGf3L1x5Ug] update_mapping [doc]
+[2018-04-12T17:40:32,659][INFO ][o.e.n.Node               ] [zVEhyW1] stopping ...
+[2018-04-12T17:40:32,717][INFO ][o.e.n.Node               ] [zVEhyW1] stopped
+[2018-04-12T17:40:32,718][INFO ][o.e.n.Node               ] [zVEhyW1] closing ...
+[2018-04-12T17:40:32,730][INFO ][o.e.n.Node               ] [zVEhyW1] closed
+[2018-04-12T17:43:53,336][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-04-12T17:43:53,389][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [101gb], net total_space [232.6gb], types [hfs]
+[2018-04-12T17:43:53,389][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-04-12T17:43:53,413][INFO ][o.e.n.Node               ] node name [zVEhyW1] derived from node ID [zVEhyW1oRbOBEzrlT6he4A]; set [node.name] to override
+[2018-04-12T17:43:53,413][INFO ][o.e.n.Node               ] version[6.2.3], pid[20573], build[c59ff00/2018-03-13T10:06:29.741383Z], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_101/25.101-b13]
+[2018-04-12T17:43:53,413][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/4k/nbxcfp6n19scrsv83b2bp94hk_ngnj/T/elasticsearch.H328CjAV, -XX:+HeapDumpOnOutOfMemoryError, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/ac044474/workspace/elasticsearch-6.2.3, -Des.path.conf=/Users/ac044474/workspace/elasticsearch-6.2.3/config]
+[2018-04-12T17:43:54,929][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [aggs-matrix-stats]
+[2018-04-12T17:43:54,929][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [analysis-common]
+[2018-04-12T17:43:54,930][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [ingest-common]
+[2018-04-12T17:43:54,930][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-expression]
+[2018-04-12T17:43:54,930][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-mustache]
+[2018-04-12T17:43:54,930][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-painless]
+[2018-04-12T17:43:54,930][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [mapper-extras]
+[2018-04-12T17:43:54,930][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [parent-join]
+[2018-04-12T17:43:54,930][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [percolator]
+[2018-04-12T17:43:54,930][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [rank-eval]
+[2018-04-12T17:43:54,931][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [reindex]
+[2018-04-12T17:43:54,931][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [repository-url]
+[2018-04-12T17:43:54,931][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [transport-netty4]
+[2018-04-12T17:43:54,931][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [tribe]
+[2018-04-12T17:43:54,931][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-core]
+[2018-04-12T17:43:54,931][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-deprecation]
+[2018-04-12T17:43:54,932][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-graph]
+[2018-04-12T17:43:54,932][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-logstash]
+[2018-04-12T17:43:54,932][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-ml]
+[2018-04-12T17:43:54,932][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-monitoring]
+[2018-04-12T17:43:54,932][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-security]
+[2018-04-12T17:43:54,932][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-upgrade]
+[2018-04-12T17:43:54,932][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-watcher]
+[2018-04-12T17:43:56,764][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/20592] [Main.cc@128] controller (64 bit): Version 6.2.3 (Build e43a9a2b267ef4) Copyright (c) 2018 Elasticsearch BV
+[2018-04-12T17:43:57,610][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2018-04-12T17:43:57,802][INFO ][o.e.d.DiscoveryModule    ] [zVEhyW1] using discovery type [zen]
+[2018-04-12T17:43:58,386][INFO ][o.e.n.Node               ] initialized
+[2018-04-12T17:43:58,386][INFO ][o.e.n.Node               ] [zVEhyW1] starting ...
+[2018-04-12T17:43:58,518][INFO ][o.e.t.TransportService   ] [zVEhyW1] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-04-12T17:44:01,575][INFO ][o.e.c.s.MasterService    ] [zVEhyW1] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{n5BeNEExTI2W5hA3bQ-OHQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}
+[2018-04-12T17:44:01,579][INFO ][o.e.c.s.ClusterApplierService] [zVEhyW1] new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{n5BeNEExTI2W5hA3bQ-OHQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{n5BeNEExTI2W5hA3bQ-OHQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-04-12T17:44:01,593][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [zVEhyW1] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-04-12T17:44:01,593][INFO ][o.e.n.Node               ] [zVEhyW1] started
+[2018-04-12T17:44:01,801][INFO ][o.e.g.GatewayService     ] [zVEhyW1] recovered [2] indices into cluster_state
+[2018-04-12T17:44:02,274][INFO ][o.e.l.LicenseService     ] [zVEhyW1] license [92a7fc92-5e30-4bbe-9e43-299bfe91ef9b] mode [trial] - valid
+[2018-04-12T17:44:02,276][INFO ][o.e.c.r.a.AllocationService] [zVEhyW1] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-2018.04.12][1], [logstash-2018.04.12][0]] ...]).
+[2018-04-12T17:44:08,526][INFO ][o.e.c.m.MetaDataCreateIndexService] [zVEhyW1] [.monitoring-es-6-2018.04.12] creating index, cause [auto(bulk api)], templates [.monitoring-es], shards [1]/[0], mappings [doc]
+[2018-04-12T17:44:08,669][INFO ][o.e.c.m.MetaDataCreateIndexService] [zVEhyW1] [.watches] creating index, cause [auto(bulk api)], templates [.watches], shards [1]/[0], mappings [doc]
+[2018-04-12T17:44:08,741][INFO ][o.e.x.w.WatcherService   ] [zVEhyW1] paused watch execution, reason [new local watcher shard allocation ids], cancelled [0] queued tasks
+[2018-04-12T17:44:08,765][INFO ][o.e.c.m.MetaDataMappingService] [zVEhyW1] [.watches/uEvIPnHYQMqnzduObhyaDA] update_mapping [doc]
+[2018-04-12T17:44:08,814][INFO ][o.e.c.m.MetaDataMappingService] [zVEhyW1] [.watches/uEvIPnHYQMqnzduObhyaDA] update_mapping [doc]
+[2018-04-12T17:45:09,264][INFO ][o.e.c.m.MetaDataCreateIndexService] [zVEhyW1] [.triggered_watches] creating index, cause [auto(bulk api)], templates [.triggered_watches], shards [1]/[1], mappings [doc]
+[2018-04-12T17:45:09,287][INFO ][o.e.c.m.MetaDataUpdateSettingsService] [zVEhyW1] updating number_of_replicas to [0] for indices [.triggered_watches]
+[2018-04-12T17:45:09,292][INFO ][o.e.c.m.MetaDataUpdateSettingsService] [zVEhyW1] [.triggered_watches/cDpQY_gZTSixF7it6FAKXg] auto expanded replicas to [0]
+[2018-04-12T17:45:09,422][INFO ][o.e.c.m.MetaDataCreateIndexService] [zVEhyW1] [.monitoring-alerts-6] creating index, cause [auto(bulk api)], templates [.monitoring-alerts], shards [1]/[0], mappings [doc]
+[2018-04-12T17:45:09,455][INFO ][o.e.c.m.MetaDataCreateIndexService] [zVEhyW1] [.watcher-history-7-2018.04.12] creating index, cause [auto(bulk api)], templates [.watch-history-7], shards [1]/[0], mappings [doc]
+[2018-04-12T17:45:09,555][INFO ][o.e.c.m.MetaDataMappingService] [zVEhyW1] [.watcher-history-7-2018.04.12/j8oNkGa7Te-hRgVM2jcBOg] update_mapping [doc]
+[2018-04-12T17:45:09,563][INFO ][o.e.c.m.MetaDataMappingService] [zVEhyW1] [.watcher-history-7-2018.04.12/j8oNkGa7Te-hRgVM2jcBOg] update_mapping [doc]
+[2018-04-12T17:45:09,614][INFO ][o.e.c.m.MetaDataMappingService] [zVEhyW1] [.watcher-history-7-2018.04.12/j8oNkGa7Te-hRgVM2jcBOg] update_mapping [doc]
+[2018-04-12T17:46:10,842][INFO ][o.e.c.m.MetaDataCreateIndexService] [zVEhyW1] [.security-6] creating index, cause [api], templates [security-index-template], shards [1]/[0], mappings [doc]
+[2018-04-12T17:56:30,169][INFO ][o.e.c.m.MetaDataMappingService] [zVEhyW1] [.kibana/gd6KW7IwRuKokGf3L1x5Ug] update_mapping [doc]
+[2018-04-12T17:56:40,260][INFO ][o.e.c.m.MetaDataCreateIndexService] [zVEhyW1] [.monitoring-kibana-6-2018.04.12] creating index, cause [auto(bulk api)], templates [.monitoring-kibana], shards [1]/[0], mappings [doc]
+[2018-04-12T18:04:45,075][INFO ][o.e.c.m.MetaDataMappingService] [zVEhyW1] [.kibana/gd6KW7IwRuKokGf3L1x5Ug] update_mapping [doc]
+[2018-04-12T18:04:48,062][INFO ][o.e.c.m.MetaDataMappingService] [zVEhyW1] [.kibana/gd6KW7IwRuKokGf3L1x5Ug] update_mapping [doc]
+[2018-04-12T18:09:19,784][INFO ][o.e.n.Node               ] [zVEhyW1] stopping ...
+[2018-04-12T18:09:19,787][INFO ][o.e.x.m.j.p.NativeController] Native controller process has stopped - no new native processes can be started
+[2018-04-12T18:09:19,798][INFO ][o.e.x.w.WatcherService   ] [zVEhyW1] stopping watch service, reason [shutdown initiated]
+[2018-04-12T18:09:20,331][INFO ][o.e.n.Node               ] [zVEhyW1] stopped
+[2018-04-12T18:09:20,332][INFO ][o.e.n.Node               ] [zVEhyW1] closing ...
+[2018-04-12T18:09:20,345][INFO ][o.e.n.Node               ] [zVEhyW1] closed
+[2018-04-12T18:17:17,523][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-04-12T18:17:17,570][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [99.4gb], net total_space [232.6gb], types [hfs]
+[2018-04-12T18:17:17,570][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-04-12T18:17:17,615][INFO ][o.e.n.Node               ] node name [zVEhyW1] derived from node ID [zVEhyW1oRbOBEzrlT6he4A]; set [node.name] to override
+[2018-04-12T18:17:17,615][INFO ][o.e.n.Node               ] version[6.2.3], pid[31052], build[c59ff00/2018-03-13T10:06:29.741383Z], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_101/25.101-b13]
+[2018-04-12T18:17:17,615][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/4k/nbxcfp6n19scrsv83b2bp94hk_ngnj/T/elasticsearch.8Emtv2wQ, -XX:+HeapDumpOnOutOfMemoryError, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/ac044474/workspace/elasticsearch-6.2.3, -Des.path.conf=/Users/ac044474/workspace/elasticsearch-6.2.3/config]
+[2018-04-12T18:17:19,280][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [aggs-matrix-stats]
+[2018-04-12T18:17:19,280][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [analysis-common]
+[2018-04-12T18:17:19,280][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [ingest-common]
+[2018-04-12T18:17:19,280][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-expression]
+[2018-04-12T18:17:19,280][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-mustache]
+[2018-04-12T18:17:19,280][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-painless]
+[2018-04-12T18:17:19,281][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [mapper-extras]
+[2018-04-12T18:17:19,281][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [parent-join]
+[2018-04-12T18:17:19,281][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [percolator]
+[2018-04-12T18:17:19,281][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [rank-eval]
+[2018-04-12T18:17:19,281][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [reindex]
+[2018-04-12T18:17:19,281][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [repository-url]
+[2018-04-12T18:17:19,281][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [transport-netty4]
+[2018-04-12T18:17:19,282][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [tribe]
+[2018-04-12T18:17:19,282][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-core]
+[2018-04-12T18:17:19,282][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-deprecation]
+[2018-04-12T18:17:19,282][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-graph]
+[2018-04-12T18:17:19,282][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-logstash]
+[2018-04-12T18:17:19,282][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-ml]
+[2018-04-12T18:17:19,283][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-monitoring]
+[2018-04-12T18:17:19,283][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-security]
+[2018-04-12T18:17:19,283][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-upgrade]
+[2018-04-12T18:17:19,283][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-watcher]
+[2018-04-12T18:17:21,065][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/31071] [Main.cc@128] controller (64 bit): Version 6.2.3 (Build e43a9a2b267ef4) Copyright (c) 2018 Elasticsearch BV
+[2018-04-12T18:17:21,540][ERROR][o.e.x.s.a.s.FileRolesStore] [zVEhyW1] invalid role definition [ingest_pipeline_user] in roles file [/Users/ac044474/workspace/elasticsearch-6.2.3/config/x-pack/roles.yml]. skipping role...
+[2018-04-12T18:17:21,924][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2018-04-12T18:17:22,170][INFO ][o.e.d.DiscoveryModule    ] [zVEhyW1] using discovery type [zen]
+[2018-04-12T18:17:22,760][INFO ][o.e.n.Node               ] initialized
+[2018-04-12T18:17:22,760][INFO ][o.e.n.Node               ] [zVEhyW1] starting ...
+[2018-04-12T18:17:22,896][INFO ][o.e.t.TransportService   ] [zVEhyW1] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-04-12T18:17:25,967][INFO ][o.e.c.s.MasterService    ] [zVEhyW1] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{1lNskDXtRqCrRLuyNrMqNw}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}
+[2018-04-12T18:17:25,973][INFO ][o.e.c.s.ClusterApplierService] [zVEhyW1] new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{1lNskDXtRqCrRLuyNrMqNw}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{1lNskDXtRqCrRLuyNrMqNw}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-04-12T18:17:25,987][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [zVEhyW1] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-04-12T18:17:25,987][INFO ][o.e.n.Node               ] [zVEhyW1] started
+[2018-04-12T18:17:26,385][INFO ][o.e.x.s.a.AuthenticationService] [zVEhyW1] Authentication of [kibana] was terminated by realm [reserved] - failed to authenticate user [kibana]
+[2018-04-12T18:17:26,421][INFO ][o.e.x.s.a.AuthenticationService] [zVEhyW1] Authentication of [kibana] was terminated by realm [reserved] - failed to authenticate user [kibana]
+[2018-04-12T18:17:26,455][INFO ][o.e.x.s.a.AuthenticationService] [zVEhyW1] Authentication of [kibana] was terminated by realm [reserved] - failed to authenticate user [kibana]
+[2018-04-12T18:17:26,505][INFO ][o.e.l.LicenseService     ] [zVEhyW1] license [92a7fc92-5e30-4bbe-9e43-299bfe91ef9b] mode [trial] - valid
+[2018-04-12T18:17:26,515][INFO ][o.e.g.GatewayService     ] [zVEhyW1] recovered [9] indices into cluster_state
+[2018-04-12T18:17:26,492][ERROR][o.e.x.s.a.e.ReservedRealm] [zVEhyW1] failed to retrieve password hash for reserved user [kibana]
+org.elasticsearch.action.NoShardAvailableActionException: No shard available for [get [.security][doc][reserved-user-kibana]: routing [null]]
+	at org.elasticsearch.action.support.single.shard.TransportSingleShardAction$AsyncSingleAction.perform(TransportSingleShardAction.java:209) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.single.shard.TransportSingleShardAction$AsyncSingleAction.start(TransportSingleShardAction.java:186) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.single.shard.TransportSingleShardAction.doExecute(TransportSingleShardAction.java:95) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.single.shard.TransportSingleShardAction.doExecute(TransportSingleShardAction.java:59) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.TransportAction.doExecute(TransportAction.java:143) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:167) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$apply$0(SecurityActionFilter.java:103) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:60) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$authorizeRequest$4(SecurityActionFilter.java:188) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:183) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:177) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:165) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.authorizeRequest(SecurityActionFilter.java:190) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$applyInternal$3(SecurityActionFilter.java:166) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:60) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$2(AuthenticationService.java:184) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$4(AuthenticationService.java:217) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:228) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:182) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:143) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:113) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.applyInternal(SecurityActionFilter.java:165) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$apply$2(SecurityActionFilter.java:117) ~[?:?]
+	at org.elasticsearch.xpack.core.security.SecurityContext.executeAsUser(SecurityContext.java:107) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils.switchUserBasedOnActionOriginAndExecute(AuthorizationUtils.java:117) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:115) ~[?:?]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:165) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:139) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:81) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:83) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:72) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:405) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.client.support.AbstractClient.get(AbstractClient.java:497) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.core.ClientHelper.executeAsyncWithOrigin(ClientHelper.java:73) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.esnative.NativeUsersStore.lambda$getReservedUserInfo$16(NativeUsersStore.java:504) ~[?:?]
+	at org.elasticsearch.xpack.security.support.IndexLifecycleManager.prepareIndexIfNeededThenExecute(IndexLifecycleManager.java:356) ~[?:?]
+	at org.elasticsearch.xpack.security.SecurityLifecycleService.prepareIndexIfNeededThenExecute(SecurityLifecycleService.java:221) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.esnative.NativeUsersStore.getReservedUserInfo(NativeUsersStore.java:503) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.esnative.ReservedRealm.getUserInfo(ReservedRealm.java:203) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.esnative.ReservedRealm.doAuthenticate(ReservedRealm.java:99) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.support.CachingUsernamePasswordRealm.doAuthenticateAndCache(CachingUsernamePasswordRealm.java:161) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.support.CachingUsernamePasswordRealm.authenticateWithCache(CachingUsernamePasswordRealm.java:100) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.support.CachingUsernamePasswordRealm.authenticate(CachingUsernamePasswordRealm.java:85) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$consumeToken$13(AuthenticationService.java:274) ~[?:?]
+	at org.elasticsearch.xpack.core.common.IteratingActionListener.run(IteratingActionListener.java:93) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.consumeToken(AuthenticationService.java:310) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$extractToken$9(AuthenticationService.java:246) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.extractToken(AuthenticationService.java:256) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:190) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:60) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.authc.TokenService.getAndValidateToken(TokenService.java:313) ~[x-pack-security-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$2(AuthenticationService.java:186) ~[x-pack-security-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$4(AuthenticationService.java:217) ~[x-pack-security-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:228) [x-pack-security-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:182) [x-pack-security-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:143) [x-pack-security-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:96) [x-pack-security-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.rest.SecurityRestFilter.handleRequest(SecurityRestFilter.java:70) [x-pack-security-6.2.3.jar:6.2.3]
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:240) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.rest.RestController.tryAllHandlers(RestController.java:336) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:174) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.http.netty4.Netty4HttpServerTransport.dispatchRequest(Netty4HttpServerTransport.java:500) [transport-netty4-6.2.3.jar:6.2.3]
+	at org.elasticsearch.http.netty4.Netty4HttpRequestHandler.channelRead0(Netty4HttpRequestHandler.java:80) [transport-netty4-6.2.3.jar:6.2.3]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at org.elasticsearch.http.netty4.pipelining.HttpPipeliningHandler.channelRead(HttpPipeliningHandler.java:68) [transport-netty4-6.2.3.jar:6.2.3]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) [netty-codec-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.handler.codec.MessageToMessageCodec.channelRead(MessageToMessageCodec.java:111) [netty-codec-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) [netty-codec-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) [netty-codec-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) [netty-codec-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284) [netty-codec-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) [netty-handler-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:134) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:545) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.16.Final.jar:4.1.16.Final]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+[2018-04-12T18:17:26,520][INFO ][o.e.x.s.a.AuthenticationService] [zVEhyW1] Authentication of [kibana] was terminated by realm [reserved] - failed to authenticate user [kibana]
+[2018-04-12T18:17:27,076][INFO ][o.e.c.r.a.AllocationService] [zVEhyW1] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-2018.04.12][0]] ...]).
+[2018-04-12T18:20:33,746][INFO ][o.e.x.m.j.p.NativeController] Native controller process has stopped - no new native processes can be started
+[2018-04-12T18:20:33,746][INFO ][o.e.n.Node               ] [zVEhyW1] stopping ...
+[2018-04-12T18:20:33,760][INFO ][o.e.x.w.WatcherService   ] [zVEhyW1] stopping watch service, reason [shutdown initiated]
+[2018-04-12T18:20:33,970][INFO ][o.e.n.Node               ] [zVEhyW1] stopped
+[2018-04-12T18:20:33,970][INFO ][o.e.n.Node               ] [zVEhyW1] closing ...
+[2018-04-12T18:20:33,978][INFO ][o.e.n.Node               ] [zVEhyW1] closed
+[2018-04-12T18:20:37,138][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-04-12T18:20:37,223][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [99.4gb], net total_space [232.6gb], types [hfs]
+[2018-04-12T18:20:37,223][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-04-12T18:20:37,273][INFO ][o.e.n.Node               ] node name [zVEhyW1] derived from node ID [zVEhyW1oRbOBEzrlT6he4A]; set [node.name] to override
+[2018-04-12T18:20:37,274][INFO ][o.e.n.Node               ] version[6.2.3], pid[31252], build[c59ff00/2018-03-13T10:06:29.741383Z], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_101/25.101-b13]
+[2018-04-12T18:20:37,274][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/4k/nbxcfp6n19scrsv83b2bp94hk_ngnj/T/elasticsearch.hOudPnzG, -XX:+HeapDumpOnOutOfMemoryError, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/ac044474/workspace/elasticsearch-6.2.3, -Des.path.conf=/Users/ac044474/workspace/elasticsearch-6.2.3/config]
+[2018-04-12T18:20:38,985][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [aggs-matrix-stats]
+[2018-04-12T18:20:38,985][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [analysis-common]
+[2018-04-12T18:20:38,985][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [ingest-common]
+[2018-04-12T18:20:38,985][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-expression]
+[2018-04-12T18:20:38,986][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-mustache]
+[2018-04-12T18:20:38,987][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-painless]
+[2018-04-12T18:20:38,987][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [mapper-extras]
+[2018-04-12T18:20:38,987][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [parent-join]
+[2018-04-12T18:20:38,987][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [percolator]
+[2018-04-12T18:20:38,987][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [rank-eval]
+[2018-04-12T18:20:38,987][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [reindex]
+[2018-04-12T18:20:38,987][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [repository-url]
+[2018-04-12T18:20:38,987][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [transport-netty4]
+[2018-04-12T18:20:38,987][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [tribe]
+[2018-04-12T18:20:38,988][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-core]
+[2018-04-12T18:20:38,988][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-deprecation]
+[2018-04-12T18:20:39,024][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-graph]
+[2018-04-12T18:20:39,024][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-logstash]
+[2018-04-12T18:20:39,025][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-ml]
+[2018-04-12T18:20:39,025][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-monitoring]
+[2018-04-12T18:20:39,025][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-security]
+[2018-04-12T18:20:39,025][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-upgrade]
+[2018-04-12T18:20:39,025][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-watcher]
+[2018-04-12T18:20:40,790][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/31272] [Main.cc@128] controller (64 bit): Version 6.2.3 (Build e43a9a2b267ef4) Copyright (c) 2018 Elasticsearch BV
+[2018-04-12T18:20:41,280][ERROR][o.e.x.s.a.s.FileRolesStore] [zVEhyW1] invalid role definition [ingest_pipeline_user] in roles file [/Users/ac044474/workspace/elasticsearch-6.2.3/config/x-pack/roles.yml]. skipping role...
+[2018-04-12T18:20:41,708][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2018-04-12T18:20:41,958][INFO ][o.e.d.DiscoveryModule    ] [zVEhyW1] using discovery type [zen]
+[2018-04-12T18:20:42,611][INFO ][o.e.n.Node               ] initialized
+[2018-04-12T18:20:42,611][INFO ][o.e.n.Node               ] [zVEhyW1] starting ...
+[2018-04-12T18:20:42,754][INFO ][o.e.t.TransportService   ] [zVEhyW1] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-04-12T18:20:45,824][INFO ][o.e.c.s.MasterService    ] [zVEhyW1] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{BYWP0ZbvR927pkYrUly8lA}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}
+[2018-04-12T18:20:45,828][INFO ][o.e.c.s.ClusterApplierService] [zVEhyW1] new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{BYWP0ZbvR927pkYrUly8lA}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{BYWP0ZbvR927pkYrUly8lA}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-04-12T18:20:45,843][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [zVEhyW1] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-04-12T18:20:45,843][INFO ][o.e.n.Node               ] [zVEhyW1] started
+[2018-04-12T18:20:46,314][INFO ][o.e.l.LicenseService     ] [zVEhyW1] license [92a7fc92-5e30-4bbe-9e43-299bfe91ef9b] mode [trial] - valid
+[2018-04-12T18:20:46,321][INFO ][o.e.g.GatewayService     ] [zVEhyW1] recovered [9] indices into cluster_state
+[2018-04-12T18:20:46,839][INFO ][o.e.c.r.a.AllocationService] [zVEhyW1] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-2018.04.12][0]] ...]).
+[2018-04-12T18:24:25,983][INFO ][o.e.x.m.j.p.NativeController] Native controller process has stopped - no new native processes can be started
+[2018-04-12T18:24:25,982][INFO ][o.e.n.Node               ] [zVEhyW1] stopping ...
+[2018-04-12T18:24:25,996][INFO ][o.e.x.w.WatcherService   ] [zVEhyW1] stopping watch service, reason [shutdown initiated]
+[2018-04-12T18:24:26,403][INFO ][o.e.n.Node               ] [zVEhyW1] stopped
+[2018-04-12T18:24:26,404][INFO ][o.e.n.Node               ] [zVEhyW1] closing ...
+[2018-04-12T18:24:26,412][INFO ][o.e.n.Node               ] [zVEhyW1] closed
+[2018-04-12T18:30:47,509][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-04-12T18:30:47,558][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [99.4gb], net total_space [232.6gb], types [hfs]
+[2018-04-12T18:30:47,559][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-04-12T18:30:47,604][INFO ][o.e.n.Node               ] node name [zVEhyW1] derived from node ID [zVEhyW1oRbOBEzrlT6he4A]; set [node.name] to override
+[2018-04-12T18:30:47,604][INFO ][o.e.n.Node               ] version[6.2.3], pid[31747], build[c59ff00/2018-03-13T10:06:29.741383Z], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_101/25.101-b13]
+[2018-04-12T18:30:47,604][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/4k/nbxcfp6n19scrsv83b2bp94hk_ngnj/T/elasticsearch.j6nq1rZp, -XX:+HeapDumpOnOutOfMemoryError, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/ac044474/workspace/elasticsearch-6.2.3, -Des.path.conf=/Users/ac044474/workspace/elasticsearch-6.2.3/config]
+[2018-04-12T18:30:49,145][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [aggs-matrix-stats]
+[2018-04-12T18:30:49,145][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [analysis-common]
+[2018-04-12T18:30:49,145][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [ingest-common]
+[2018-04-12T18:30:49,145][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-expression]
+[2018-04-12T18:30:49,145][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-mustache]
+[2018-04-12T18:30:49,146][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-painless]
+[2018-04-12T18:30:49,146][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [mapper-extras]
+[2018-04-12T18:30:49,146][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [parent-join]
+[2018-04-12T18:30:49,146][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [percolator]
+[2018-04-12T18:30:49,146][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [rank-eval]
+[2018-04-12T18:30:49,146][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [reindex]
+[2018-04-12T18:30:49,146][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [repository-url]
+[2018-04-12T18:30:49,147][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [transport-netty4]
+[2018-04-12T18:30:49,147][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [tribe]
+[2018-04-12T18:30:49,147][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-core]
+[2018-04-12T18:30:49,148][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-deprecation]
+[2018-04-12T18:30:49,149][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-graph]
+[2018-04-12T18:30:49,149][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-logstash]
+[2018-04-12T18:30:49,149][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-ml]
+[2018-04-12T18:30:49,149][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-monitoring]
+[2018-04-12T18:30:49,149][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-security]
+[2018-04-12T18:30:49,149][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-upgrade]
+[2018-04-12T18:30:49,149][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-watcher]
+[2018-04-12T18:30:51,007][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/31765] [Main.cc@128] controller (64 bit): Version 6.2.3 (Build e43a9a2b267ef4) Copyright (c) 2018 Elasticsearch BV
+[2018-04-12T18:30:51,858][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2018-04-12T18:30:52,102][INFO ][o.e.d.DiscoveryModule    ] [zVEhyW1] using discovery type [zen]
+[2018-04-12T18:30:52,680][INFO ][o.e.n.Node               ] initialized
+[2018-04-12T18:30:52,680][INFO ][o.e.n.Node               ] [zVEhyW1] starting ...
+[2018-04-12T18:30:52,812][INFO ][o.e.t.TransportService   ] [zVEhyW1] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-04-12T18:30:55,887][INFO ][o.e.c.s.MasterService    ] [zVEhyW1] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{RX98wfnMQG2VYVVOPuFJdg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}
+[2018-04-12T18:30:55,891][INFO ][o.e.c.s.ClusterApplierService] [zVEhyW1] new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{RX98wfnMQG2VYVVOPuFJdg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{RX98wfnMQG2VYVVOPuFJdg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-04-12T18:30:55,906][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [zVEhyW1] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-04-12T18:30:55,906][INFO ][o.e.n.Node               ] [zVEhyW1] started
+[2018-04-12T18:30:56,345][INFO ][o.e.l.LicenseService     ] [zVEhyW1] license [92a7fc92-5e30-4bbe-9e43-299bfe91ef9b] mode [trial] - valid
+[2018-04-12T18:30:56,352][INFO ][o.e.g.GatewayService     ] [zVEhyW1] recovered [9] indices into cluster_state
+[2018-04-12T18:30:56,888][INFO ][o.e.c.r.a.AllocationService] [zVEhyW1] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-2018.04.12][3]] ...]).
+[2018-04-12T18:34:23,093][INFO ][o.e.x.m.j.p.NativeController] Native controller process has stopped - no new native processes can be started
+[2018-04-12T18:34:23,092][INFO ][o.e.n.Node               ] [zVEhyW1] stopping ...
+[2018-04-12T18:34:23,104][INFO ][o.e.x.w.WatcherService   ] [zVEhyW1] stopping watch service, reason [shutdown initiated]
+[2018-04-12T18:34:25,954][DEBUG][o.e.a.a.c.n.s.TransportNodesStatsAction] [zVEhyW1] failed to execute on node [zVEhyW1oRbOBEzrlT6he4A]
+org.elasticsearch.transport.SendRequestTransportException: [zVEhyW1][127.0.0.1:9300][cluster:monitor/nodes/stats[n]]
+	at org.elasticsearch.transport.TransportService.sendRequestInternal(TransportService.java:608) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor.sendWithUser(SecurityServerTransportInterceptor.java:157) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor.access$300(SecurityServerTransportInterceptor.java:62) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$1.sendRequest(SecurityServerTransportInterceptor.java:136) ~[?:?]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:518) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:506) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.start(TransportNodesAction.java:197) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:89) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:52) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:167) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$apply$0(SecurityActionFilter.java:103) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:60) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$authorizeRequest$4(SecurityActionFilter.java:188) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:183) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:177) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:159) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.authorizeRequest(SecurityActionFilter.java:190) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$applyInternal$3(SecurityActionFilter.java:166) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:60) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$writeAuthToContext$23(AuthenticationService.java:443) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.writeAuthToContext(AuthenticationService.java:452) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$handleNullToken$16(AuthenticationService.java:345) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.handleNullToken(AuthenticationService.java:352) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.consumeToken(AuthenticationService.java:267) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$extractToken$7(AuthenticationService.java:238) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.extractToken(AuthenticationService.java:256) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:190) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:60) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.authc.TokenService.getAndValidateToken(TokenService.java:313) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$2(AuthenticationService.java:186) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$4(AuthenticationService.java:217) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:228) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:182) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:143) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:113) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.applyInternal(SecurityActionFilter.java:165) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:124) ~[?:?]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:165) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:139) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:81) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:83) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:72) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:405) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.client.support.AbstractClient$ClusterAdmin.execute(AbstractClient.java:712) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.client.support.AbstractClient$ClusterAdmin.nodesStats(AbstractClient.java:808) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateNodeStats(InternalClusterInfoService.java:254) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cluster.InternalClusterInfoService.refresh(InternalClusterInfoService.java:290) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cluster.InternalClusterInfoService.maybeRefresh(InternalClusterInfoService.java:275) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cluster.InternalClusterInfoService.access$500(InternalClusterInfoService.java:68) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cluster.InternalClusterInfoService$SubmitReschedulingClusterInfoUpdatedJob.lambda$run$0(InternalClusterInfoService.java:222) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequestInternal(TransportService.java:592) ~[elasticsearch-6.2.3.jar:6.2.3]
+	... 53 more
+[2018-04-12T18:34:25,954][DEBUG][o.e.a.a.i.s.TransportIndicesStatsAction] [zVEhyW1] failed to execute [indices:monitor/stats] on node [zVEhyW1oRbOBEzrlT6he4A]
+org.elasticsearch.transport.SendRequestTransportException: [zVEhyW1][127.0.0.1:9300][indices:monitor/stats[n]]
+	at org.elasticsearch.transport.TransportService.sendRequestInternal(TransportService.java:608) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor.sendWithUser(SecurityServerTransportInterceptor.java:157) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor.access$300(SecurityServerTransportInterceptor.java:62) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$1.sendRequest(SecurityServerTransportInterceptor.java:136) ~[?:?]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:518) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:493) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeAction$AsyncAction.sendNodeRequest(TransportBroadcastByNodeAction.java:322) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeAction$AsyncAction.start(TransportBroadcastByNodeAction.java:311) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeAction.doExecute(TransportBroadcastByNodeAction.java:234) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeAction.doExecute(TransportBroadcastByNodeAction.java:79) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:167) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$apply$0(SecurityActionFilter.java:103) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:60) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$authorizeRequest$4(SecurityActionFilter.java:188) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:183) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:177) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:159) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.authorizeRequest(SecurityActionFilter.java:190) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$applyInternal$3(SecurityActionFilter.java:166) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:60) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$writeAuthToContext$23(AuthenticationService.java:443) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.writeAuthToContext(AuthenticationService.java:452) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$handleNullToken$16(AuthenticationService.java:345) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.handleNullToken(AuthenticationService.java:352) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.consumeToken(AuthenticationService.java:267) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$extractToken$7(AuthenticationService.java:238) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.extractToken(AuthenticationService.java:256) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:190) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:60) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.security.authc.TokenService.getAndValidateToken(TokenService.java:313) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$2(AuthenticationService.java:186) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$4(AuthenticationService.java:217) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:228) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:182) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:143) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:113) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.applyInternal(SecurityActionFilter.java:165) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:124) ~[?:?]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:165) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:139) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:81) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:83) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:72) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:405) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.execute(AbstractClient.java:1253) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.stats(AbstractClient.java:1574) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateIndicesStats(InternalClusterInfoService.java:268) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cluster.InternalClusterInfoService.refresh(InternalClusterInfoService.java:319) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cluster.InternalClusterInfoService.maybeRefresh(InternalClusterInfoService.java:275) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cluster.InternalClusterInfoService.access$500(InternalClusterInfoService.java:68) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cluster.InternalClusterInfoService$SubmitReschedulingClusterInfoUpdatedJob.lambda$run$0(InternalClusterInfoService.java:222) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequestInternal(TransportService.java:592) ~[elasticsearch-6.2.3.jar:6.2.3]
+	... 54 more
+[2018-04-12T18:34:28,295][INFO ][o.e.n.Node               ] [zVEhyW1] stopped
+[2018-04-12T18:34:28,295][INFO ][o.e.n.Node               ] [zVEhyW1] closing ...
+[2018-04-12T18:34:28,306][INFO ][o.e.n.Node               ] [zVEhyW1] closed
+[2018-04-12T18:37:09,416][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-04-12T18:37:09,466][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [99.4gb], net total_space [232.6gb], types [hfs]
+[2018-04-12T18:37:09,466][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-04-12T18:37:09,513][INFO ][o.e.n.Node               ] node name [zVEhyW1] derived from node ID [zVEhyW1oRbOBEzrlT6he4A]; set [node.name] to override
+[2018-04-12T18:37:09,514][INFO ][o.e.n.Node               ] version[6.2.3], pid[32158], build[c59ff00/2018-03-13T10:06:29.741383Z], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_101/25.101-b13]
+[2018-04-12T18:37:09,514][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/4k/nbxcfp6n19scrsv83b2bp94hk_ngnj/T/elasticsearch.KuRpgAGQ, -XX:+HeapDumpOnOutOfMemoryError, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/ac044474/workspace/elasticsearch-6.2.3, -Des.path.conf=/Users/ac044474/workspace/elasticsearch-6.2.3/config]
+[2018-04-12T18:37:11,089][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [aggs-matrix-stats]
+[2018-04-12T18:37:11,090][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [analysis-common]
+[2018-04-12T18:37:11,090][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [ingest-common]
+[2018-04-12T18:37:11,090][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-expression]
+[2018-04-12T18:37:11,090][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-mustache]
+[2018-04-12T18:37:11,090][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-painless]
+[2018-04-12T18:37:11,090][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [mapper-extras]
+[2018-04-12T18:37:11,090][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [parent-join]
+[2018-04-12T18:37:11,090][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [percolator]
+[2018-04-12T18:37:11,091][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [rank-eval]
+[2018-04-12T18:37:11,091][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [reindex]
+[2018-04-12T18:37:11,091][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [repository-url]
+[2018-04-12T18:37:11,091][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [transport-netty4]
+[2018-04-12T18:37:11,091][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [tribe]
+[2018-04-12T18:37:11,091][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-core]
+[2018-04-12T18:37:11,091][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-deprecation]
+[2018-04-12T18:37:11,092][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-graph]
+[2018-04-12T18:37:11,092][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-logstash]
+[2018-04-12T18:37:11,092][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-ml]
+[2018-04-12T18:37:11,099][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-monitoring]
+[2018-04-12T18:37:11,099][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-security]
+[2018-04-12T18:37:11,099][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-upgrade]
+[2018-04-12T18:37:11,100][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-watcher]
+[2018-04-12T18:37:12,891][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/32177] [Main.cc@128] controller (64 bit): Version 6.2.3 (Build e43a9a2b267ef4) Copyright (c) 2018 Elasticsearch BV
+[2018-04-12T18:37:13,768][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2018-04-12T18:37:14,009][INFO ][o.e.d.DiscoveryModule    ] [zVEhyW1] using discovery type [zen]
+[2018-04-12T18:37:14,625][INFO ][o.e.n.Node               ] initialized
+[2018-04-12T18:37:14,625][INFO ][o.e.n.Node               ] [zVEhyW1] starting ...
+[2018-04-12T18:37:14,758][INFO ][o.e.t.TransportService   ] [zVEhyW1] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-04-12T18:37:17,831][INFO ][o.e.c.s.MasterService    ] [zVEhyW1] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{aRYcA7VxSPetygmtnPeg4w}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}
+[2018-04-12T18:37:17,835][INFO ][o.e.c.s.ClusterApplierService] [zVEhyW1] new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{aRYcA7VxSPetygmtnPeg4w}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{aRYcA7VxSPetygmtnPeg4w}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-04-12T18:37:17,849][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [zVEhyW1] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-04-12T18:37:17,850][INFO ][o.e.n.Node               ] [zVEhyW1] started
+[2018-04-12T18:37:18,296][INFO ][o.e.l.LicenseService     ] [zVEhyW1] license [92a7fc92-5e30-4bbe-9e43-299bfe91ef9b] mode [trial] - valid
+[2018-04-12T18:37:18,303][INFO ][o.e.g.GatewayService     ] [zVEhyW1] recovered [9] indices into cluster_state
+[2018-04-12T18:37:18,823][INFO ][o.e.c.r.a.AllocationService] [zVEhyW1] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-2018.04.12][0]] ...]).
+[2018-04-12T18:40:25,887][INFO ][o.e.x.m.j.p.NativeController] Native controller process has stopped - no new native processes can be started
+[2018-04-12T18:40:25,886][INFO ][o.e.n.Node               ] [zVEhyW1] stopping ...
+[2018-04-12T18:40:25,899][INFO ][o.e.x.w.WatcherService   ] [zVEhyW1] stopping watch service, reason [shutdown initiated]
+[2018-04-12T18:40:26,213][INFO ][o.e.n.Node               ] [zVEhyW1] stopped
+[2018-04-12T18:40:26,213][INFO ][o.e.n.Node               ] [zVEhyW1] closing ...
+[2018-04-12T18:40:26,223][INFO ][o.e.n.Node               ] [zVEhyW1] closed
+[2018-04-12T18:41:50,372][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-04-12T18:41:50,422][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [99.4gb], net total_space [232.6gb], types [hfs]
+[2018-04-12T18:41:50,422][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-04-12T18:41:50,464][INFO ][o.e.n.Node               ] node name [zVEhyW1] derived from node ID [zVEhyW1oRbOBEzrlT6he4A]; set [node.name] to override
+[2018-04-12T18:41:50,465][INFO ][o.e.n.Node               ] version[6.2.3], pid[32492], build[c59ff00/2018-03-13T10:06:29.741383Z], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_101/25.101-b13]
+[2018-04-12T18:41:50,465][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/4k/nbxcfp6n19scrsv83b2bp94hk_ngnj/T/elasticsearch.cCsqMOhf, -XX:+HeapDumpOnOutOfMemoryError, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/ac044474/workspace/elasticsearch-6.2.3, -Des.path.conf=/Users/ac044474/workspace/elasticsearch-6.2.3/config]
+[2018-04-12T18:41:51,980][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [aggs-matrix-stats]
+[2018-04-12T18:41:51,980][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [analysis-common]
+[2018-04-12T18:41:51,980][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [ingest-common]
+[2018-04-12T18:41:51,981][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-expression]
+[2018-04-12T18:41:51,981][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-mustache]
+[2018-04-12T18:41:51,981][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-painless]
+[2018-04-12T18:41:51,981][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [mapper-extras]
+[2018-04-12T18:41:51,981][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [parent-join]
+[2018-04-12T18:41:51,981][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [percolator]
+[2018-04-12T18:41:51,981][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [rank-eval]
+[2018-04-12T18:41:51,981][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [reindex]
+[2018-04-12T18:41:51,982][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [repository-url]
+[2018-04-12T18:41:51,982][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [transport-netty4]
+[2018-04-12T18:41:51,982][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [tribe]
+[2018-04-12T18:41:51,982][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-core]
+[2018-04-12T18:41:51,982][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-deprecation]
+[2018-04-12T18:41:51,982][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-graph]
+[2018-04-12T18:41:51,982][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-logstash]
+[2018-04-12T18:41:51,983][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-ml]
+[2018-04-12T18:41:51,983][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-monitoring]
+[2018-04-12T18:41:51,983][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-security]
+[2018-04-12T18:41:51,983][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-upgrade]
+[2018-04-12T18:41:51,983][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-watcher]
+[2018-04-12T18:41:53,785][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/32511] [Main.cc@128] controller (64 bit): Version 6.2.3 (Build e43a9a2b267ef4) Copyright (c) 2018 Elasticsearch BV
+[2018-04-12T18:41:54,644][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2018-04-12T18:41:54,889][INFO ][o.e.d.DiscoveryModule    ] [zVEhyW1] using discovery type [zen]
+[2018-04-12T18:41:55,522][INFO ][o.e.n.Node               ] initialized
+[2018-04-12T18:41:55,522][INFO ][o.e.n.Node               ] [zVEhyW1] starting ...
+[2018-04-12T18:41:55,655][INFO ][o.e.t.TransportService   ] [zVEhyW1] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-04-12T18:41:58,726][INFO ][o.e.c.s.MasterService    ] [zVEhyW1] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{jHGJ_YcCQ-CtcjJl2RGDYQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}
+[2018-04-12T18:41:58,730][INFO ][o.e.c.s.ClusterApplierService] [zVEhyW1] new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{jHGJ_YcCQ-CtcjJl2RGDYQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{jHGJ_YcCQ-CtcjJl2RGDYQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-04-12T18:41:58,744][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [zVEhyW1] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-04-12T18:41:58,745][INFO ][o.e.n.Node               ] [zVEhyW1] started
+[2018-04-12T18:41:59,191][INFO ][o.e.l.LicenseService     ] [zVEhyW1] license [92a7fc92-5e30-4bbe-9e43-299bfe91ef9b] mode [trial] - valid
+[2018-04-12T18:41:59,197][INFO ][o.e.g.GatewayService     ] [zVEhyW1] recovered [9] indices into cluster_state
+[2018-04-12T18:41:59,787][INFO ][o.e.c.r.a.AllocationService] [zVEhyW1] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-2018.04.12][1]] ...]).
+[2018-04-12T18:42:34,713][INFO ][o.e.x.m.j.p.NativeController] Native controller process has stopped - no new native processes can be started
+[2018-04-12T18:42:34,712][INFO ][o.e.n.Node               ] [zVEhyW1] stopping ...
+[2018-04-12T18:42:34,724][INFO ][o.e.x.w.WatcherService   ] [zVEhyW1] stopping watch service, reason [shutdown initiated]
+[2018-04-12T18:42:34,940][INFO ][o.e.n.Node               ] [zVEhyW1] stopped
+[2018-04-12T18:42:34,941][INFO ][o.e.n.Node               ] [zVEhyW1] closing ...
+[2018-04-12T18:42:34,948][INFO ][o.e.n.Node               ] [zVEhyW1] closed
+[2018-04-12T18:42:49,483][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-04-12T18:42:49,531][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [99.4gb], net total_space [232.6gb], types [hfs]
+[2018-04-12T18:42:49,532][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-04-12T18:42:49,575][INFO ][o.e.n.Node               ] node name [zVEhyW1] derived from node ID [zVEhyW1oRbOBEzrlT6he4A]; set [node.name] to override
+[2018-04-12T18:42:49,576][INFO ][o.e.n.Node               ] version[6.2.3], pid[32565], build[c59ff00/2018-03-13T10:06:29.741383Z], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_101/25.101-b13]
+[2018-04-12T18:42:49,576][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/4k/nbxcfp6n19scrsv83b2bp94hk_ngnj/T/elasticsearch.cBouwuir, -XX:+HeapDumpOnOutOfMemoryError, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/ac044474/workspace/elasticsearch-6.2.3, -Des.path.conf=/Users/ac044474/workspace/elasticsearch-6.2.3/config]
+[2018-04-12T18:42:51,127][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [aggs-matrix-stats]
+[2018-04-12T18:42:51,128][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [analysis-common]
+[2018-04-12T18:42:51,128][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [ingest-common]
+[2018-04-12T18:42:51,128][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-expression]
+[2018-04-12T18:42:51,128][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-mustache]
+[2018-04-12T18:42:51,128][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-painless]
+[2018-04-12T18:42:51,128][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [mapper-extras]
+[2018-04-12T18:42:51,128][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [parent-join]
+[2018-04-12T18:42:51,128][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [percolator]
+[2018-04-12T18:42:51,128][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [rank-eval]
+[2018-04-12T18:42:51,129][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [reindex]
+[2018-04-12T18:42:51,129][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [repository-url]
+[2018-04-12T18:42:51,129][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [transport-netty4]
+[2018-04-12T18:42:51,129][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [tribe]
+[2018-04-12T18:42:51,129][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-core]
+[2018-04-12T18:42:51,129][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-deprecation]
+[2018-04-12T18:42:51,130][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-graph]
+[2018-04-12T18:42:51,130][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-logstash]
+[2018-04-12T18:42:51,130][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-ml]
+[2018-04-12T18:42:51,130][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-monitoring]
+[2018-04-12T18:42:51,130][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-security]
+[2018-04-12T18:42:51,130][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-upgrade]
+[2018-04-12T18:42:51,130][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-watcher]
+[2018-04-12T18:42:52,952][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/32586] [Main.cc@128] controller (64 bit): Version 6.2.3 (Build e43a9a2b267ef4) Copyright (c) 2018 Elasticsearch BV
+[2018-04-12T18:42:53,875][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2018-04-12T18:42:54,143][INFO ][o.e.d.DiscoveryModule    ] [zVEhyW1] using discovery type [zen]
+[2018-04-12T18:42:54,784][INFO ][o.e.n.Node               ] initialized
+[2018-04-12T18:42:54,785][INFO ][o.e.n.Node               ] [zVEhyW1] starting ...
+[2018-04-12T18:42:54,961][INFO ][o.e.t.TransportService   ] [zVEhyW1] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-04-12T18:42:58,037][INFO ][o.e.c.s.MasterService    ] [zVEhyW1] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{iHWoTLR-R32L-yf4k168kw}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}
+[2018-04-12T18:42:58,041][INFO ][o.e.c.s.ClusterApplierService] [zVEhyW1] new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{iHWoTLR-R32L-yf4k168kw}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{iHWoTLR-R32L-yf4k168kw}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-04-12T18:42:58,055][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [zVEhyW1] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-04-12T18:42:58,055][INFO ][o.e.n.Node               ] [zVEhyW1] started
+[2018-04-12T18:42:58,414][INFO ][o.e.x.s.a.AuthenticationService] [zVEhyW1] Authentication of [kibana] was terminated by realm [reserved] - failed to authenticate user [kibana]
+[2018-04-12T18:42:58,531][INFO ][o.e.l.LicenseService     ] [zVEhyW1] license [92a7fc92-5e30-4bbe-9e43-299bfe91ef9b] mode [trial] - valid
+[2018-04-12T18:42:58,546][INFO ][o.e.g.GatewayService     ] [zVEhyW1] recovered [9] indices into cluster_state
+[2018-04-12T18:42:59,169][INFO ][o.e.c.r.a.AllocationService] [zVEhyW1] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-2018.04.12][0]] ...]).
+[2018-04-12T19:01:33,234][INFO ][o.e.c.m.MetaDataCreateIndexService] [zVEhyW1] [.monitoring-kibana-6-2018.04.13] creating index, cause [auto(bulk api)], templates [.monitoring-kibana], shards [1]/[0], mappings [doc]
+[2018-04-12T19:01:34,184][ERROR][o.e.x.w.t.s.ExecutableScriptTransform] [zVEhyW1] failed to execute [script] transform for [SdW2cJ4SSjWV71n_C0ErOA_elasticsearch_cluster_status_01a67880-ab9e-401b-a557-b00f12a1193d-2018-04-13T00:01:33.011Z]
+org.elasticsearch.script.ScriptException: runtime error
+	at org.elasticsearch.painless.PainlessScript.convertToScriptException(PainlessScript.java:101) ~[?:?]
+	at org.elasticsearch.painless.PainlessScript$Script.execute(ctx.vars.email_recipient = (ctx.payload.kibana_settings.hits.total > 0) ? ctx.payload.kibana_settings.hits.hits[0]._source.kibana_settings.xpack.default_admin_email : null;ctx.vars.is_new = ctx.vars.fails_check && !ctx.vars.not_resolved;ctx.vars.is_resolve ...:1070) ~[?:?]
+	at org.elasticsearch.painless.ScriptImpl.run(ScriptImpl.java:105) ~[?:?]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.doExecute(ExecutableScriptTransform.java:69) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.execute(ExecutableScriptTransform.java:53) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.execute(ExecutableScriptTransform.java:38) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.executeInner(ExecutionService.java:481) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.execute(ExecutionService.java:322) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.lambda$executeAsync$7(ExecutionService.java:426) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService$WatchExecutionTask.run(ExecutionService.java:580) [x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573) [elasticsearch-6.2.3.jar:6.2.3]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653) ~[?:1.8.0_101]
+	at java.util.ArrayList.get(ArrayList.java:429) ~[?:1.8.0_101]
+	at org.elasticsearch.painless.PainlessScript$Script.execute(ctx.vars.email_recipient = (ctx.payload.kibana_settings.hits.total > 0) ? ctx.payload.kibana_settings.hits.hits[0]._source.kibana_settings.xpack.default_admin_email : null;ctx.vars.is_new = ctx.vars.fails_check && !ctx.vars.not_resolved;ctx.vars.is_resolve ...:347) ~[?:?]
+	... 12 more
+[2018-04-12T19:01:34,214][INFO ][o.e.c.m.MetaDataCreateIndexService] [zVEhyW1] [.watcher-history-7-2018.04.13] creating index, cause [auto(bulk api)], templates [.watch-history-7], shards [1]/[0], mappings [doc]
+[2018-04-12T19:01:34,560][INFO ][o.e.c.m.MetaDataMappingService] [zVEhyW1] [.watcher-history-7-2018.04.13/uRVSiGfWRSSNsGJzVLnjbA] update_mapping [doc]
+[2018-04-12T19:01:34,569][INFO ][o.e.c.m.MetaDataMappingService] [zVEhyW1] [.watcher-history-7-2018.04.13/uRVSiGfWRSSNsGJzVLnjbA] update_mapping [doc]
+[2018-04-12T19:01:37,373][INFO ][o.e.c.m.MetaDataCreateIndexService] [zVEhyW1] [.monitoring-es-6-2018.04.13] creating index, cause [auto(bulk api)], templates [.monitoring-es], shards [1]/[0], mappings [doc]
+[2018-04-12T19:04:47,187][ERROR][o.e.x.w.t.s.ExecutableScriptTransform] [zVEhyW1] failed to execute [script] transform for [SdW2cJ4SSjWV71n_C0ErOA_elasticsearch_cluster_status_ec1cca41-695b-413d-8ca9-cce2da3b43aa-2018-04-13T00:04:46.010Z]
+org.elasticsearch.script.ScriptException: runtime error
+	at org.elasticsearch.painless.PainlessScript.convertToScriptException(PainlessScript.java:101) ~[?:?]
+	at org.elasticsearch.painless.PainlessScript$Script.execute(ctx.vars.email_recipient = (ctx.payload.kibana_settings.hits.total > 0) ? ctx.payload.kibana_settings.hits.hits[0]._source.kibana_settings.xpack.default_admin_email : null;ctx.vars.is_new = ctx.vars.fails_check && !ctx.vars.not_resolved;ctx.vars.is_resolve ...:1070) ~[?:?]
+	at org.elasticsearch.painless.ScriptImpl.run(ScriptImpl.java:105) ~[?:?]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.doExecute(ExecutableScriptTransform.java:69) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.execute(ExecutableScriptTransform.java:53) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.execute(ExecutableScriptTransform.java:38) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.executeInner(ExecutionService.java:481) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.execute(ExecutionService.java:322) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.lambda$executeAsync$7(ExecutionService.java:426) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService$WatchExecutionTask.run(ExecutionService.java:580) [x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573) [elasticsearch-6.2.3.jar:6.2.3]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653) ~[?:1.8.0_101]
+	at java.util.ArrayList.get(ArrayList.java:429) ~[?:1.8.0_101]
+	at org.elasticsearch.painless.PainlessScript$Script.execute(ctx.vars.email_recipient = (ctx.payload.kibana_settings.hits.total > 0) ? ctx.payload.kibana_settings.hits.hits[0]._source.kibana_settings.xpack.default_admin_email : null;ctx.vars.is_new = ctx.vars.fails_check && !ctx.vars.not_resolved;ctx.vars.is_resolve ...:347) ~[?:?]
+	... 12 more
+[2018-04-12T19:27:25,176][ERROR][o.e.x.w.t.s.ExecutableScriptTransform] [zVEhyW1] failed to execute [script] transform for [SdW2cJ4SSjWV71n_C0ErOA_elasticsearch_cluster_status_982c3281-6479-4bb1-92a8-3452f7e9907c-2018-04-13T00:27:24.006Z]
+org.elasticsearch.script.ScriptException: runtime error
+	at org.elasticsearch.painless.PainlessScript.convertToScriptException(PainlessScript.java:101) ~[?:?]
+	at org.elasticsearch.painless.PainlessScript$Script.execute(ctx.vars.email_recipient = (ctx.payload.kibana_settings.hits.total > 0) ? ctx.payload.kibana_settings.hits.hits[0]._source.kibana_settings.xpack.default_admin_email : null;ctx.vars.is_new = ctx.vars.fails_check && !ctx.vars.not_resolved;ctx.vars.is_resolve ...:1070) ~[?:?]
+	at org.elasticsearch.painless.ScriptImpl.run(ScriptImpl.java:105) ~[?:?]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.doExecute(ExecutableScriptTransform.java:69) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.execute(ExecutableScriptTransform.java:53) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.execute(ExecutableScriptTransform.java:38) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.executeInner(ExecutionService.java:481) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.execute(ExecutionService.java:322) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.lambda$executeAsync$7(ExecutionService.java:426) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService$WatchExecutionTask.run(ExecutionService.java:580) [x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573) [elasticsearch-6.2.3.jar:6.2.3]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653) ~[?:1.8.0_101]
+	at java.util.ArrayList.get(ArrayList.java:429) ~[?:1.8.0_101]
+	at org.elasticsearch.painless.PainlessScript$Script.execute(ctx.vars.email_recipient = (ctx.payload.kibana_settings.hits.total > 0) ? ctx.payload.kibana_settings.hits.hits[0]._source.kibana_settings.xpack.default_admin_email : null;ctx.vars.is_new = ctx.vars.fails_check && !ctx.vars.not_resolved;ctx.vars.is_resolve ...:347) ~[?:?]
+	... 12 more
+[2018-04-12T19:54:58,158][ERROR][o.e.x.w.t.s.ExecutableScriptTransform] [zVEhyW1] failed to execute [script] transform for [SdW2cJ4SSjWV71n_C0ErOA_elasticsearch_cluster_status_5af7635c-09e2-4b98-84a5-42865f67834a-2018-04-13T00:54:57.009Z]
+org.elasticsearch.script.ScriptException: runtime error
+	at org.elasticsearch.painless.PainlessScript.convertToScriptException(PainlessScript.java:101) ~[?:?]
+	at org.elasticsearch.painless.PainlessScript$Script.execute(ctx.vars.email_recipient = (ctx.payload.kibana_settings.hits.total > 0) ? ctx.payload.kibana_settings.hits.hits[0]._source.kibana_settings.xpack.default_admin_email : null;ctx.vars.is_new = ctx.vars.fails_check && !ctx.vars.not_resolved;ctx.vars.is_resolve ...:1070) ~[?:?]
+	at org.elasticsearch.painless.ScriptImpl.run(ScriptImpl.java:105) ~[?:?]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.doExecute(ExecutableScriptTransform.java:69) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.execute(ExecutableScriptTransform.java:53) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.execute(ExecutableScriptTransform.java:38) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.executeInner(ExecutionService.java:481) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.execute(ExecutionService.java:322) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.lambda$executeAsync$7(ExecutionService.java:426) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService$WatchExecutionTask.run(ExecutionService.java:580) [x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573) [elasticsearch-6.2.3.jar:6.2.3]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653) ~[?:1.8.0_101]
+	at java.util.ArrayList.get(ArrayList.java:429) ~[?:1.8.0_101]
+	at org.elasticsearch.painless.PainlessScript$Script.execute(ctx.vars.email_recipient = (ctx.payload.kibana_settings.hits.total > 0) ? ctx.payload.kibana_settings.hits.hits[0]._source.kibana_settings.xpack.default_admin_email : null;ctx.vars.is_new = ctx.vars.fails_check && !ctx.vars.not_resolved;ctx.vars.is_resolve ...:347) ~[?:?]
+	... 12 more
+[2018-04-12T20:49:12,169][ERROR][o.e.x.w.t.s.ExecutableScriptTransform] [zVEhyW1] failed to execute [script] transform for [SdW2cJ4SSjWV71n_C0ErOA_elasticsearch_cluster_status_f0f5bda6-c51c-4789-8c73-fc177ef8c192-2018-04-13T01:49:11.005Z]
+org.elasticsearch.script.ScriptException: runtime error
+	at org.elasticsearch.painless.PainlessScript.convertToScriptException(PainlessScript.java:101) ~[?:?]
+	at org.elasticsearch.painless.PainlessScript$Script.execute(ctx.vars.email_recipient = (ctx.payload.kibana_settings.hits.total > 0) ? ctx.payload.kibana_settings.hits.hits[0]._source.kibana_settings.xpack.default_admin_email : null;ctx.vars.is_new = ctx.vars.fails_check && !ctx.vars.not_resolved;ctx.vars.is_resolve ...:1070) ~[?:?]
+	at org.elasticsearch.painless.ScriptImpl.run(ScriptImpl.java:105) ~[?:?]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.doExecute(ExecutableScriptTransform.java:69) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.execute(ExecutableScriptTransform.java:53) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.execute(ExecutableScriptTransform.java:38) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.executeInner(ExecutionService.java:481) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.execute(ExecutionService.java:322) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.lambda$executeAsync$7(ExecutionService.java:426) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService$WatchExecutionTask.run(ExecutionService.java:580) [x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573) [elasticsearch-6.2.3.jar:6.2.3]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653) ~[?:1.8.0_101]
+	at java.util.ArrayList.get(ArrayList.java:429) ~[?:1.8.0_101]
+	at org.elasticsearch.painless.PainlessScript$Script.execute(ctx.vars.email_recipient = (ctx.payload.kibana_settings.hits.total > 0) ? ctx.payload.kibana_settings.hits.hits[0]._source.kibana_settings.xpack.default_admin_email : null;ctx.vars.is_new = ctx.vars.fails_check && !ctx.vars.not_resolved;ctx.vars.is_resolve ...:347) ~[?:?]
+	... 12 more
+[2018-04-12T21:33:09,207][ERROR][o.e.x.w.t.s.ExecutableScriptTransform] [zVEhyW1] failed to execute [script] transform for [SdW2cJ4SSjWV71n_C0ErOA_elasticsearch_cluster_status_8e6fe4a6-0556-4135-bb68-4b58d0f97cd7-2018-04-13T02:33:08.012Z]
+org.elasticsearch.script.ScriptException: runtime error
+	at org.elasticsearch.painless.PainlessScript.convertToScriptException(PainlessScript.java:101) ~[?:?]
+	at org.elasticsearch.painless.PainlessScript$Script.execute(ctx.vars.email_recipient = (ctx.payload.kibana_settings.hits.total > 0) ? ctx.payload.kibana_settings.hits.hits[0]._source.kibana_settings.xpack.default_admin_email : null;ctx.vars.is_new = ctx.vars.fails_check && !ctx.vars.not_resolved;ctx.vars.is_resolve ...:1070) ~[?:?]
+	at org.elasticsearch.painless.ScriptImpl.run(ScriptImpl.java:105) ~[?:?]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.doExecute(ExecutableScriptTransform.java:69) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.execute(ExecutableScriptTransform.java:53) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.transform.script.ExecutableScriptTransform.execute(ExecutableScriptTransform.java:38) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.executeInner(ExecutionService.java:481) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.execute(ExecutionService.java:322) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService.lambda$executeAsync$7(ExecutionService.java:426) ~[x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.xpack.watcher.execution.ExecutionService$WatchExecutionTask.run(ExecutionService.java:580) [x-pack-watcher-6.2.3.jar:6.2.3]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573) [elasticsearch-6.2.3.jar:6.2.3]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653) ~[?:1.8.0_101]
+	at java.util.ArrayList.get(ArrayList.java:429) ~[?:1.8.0_101]
+	at org.elasticsearch.painless.PainlessScript$Script.execute(ctx.vars.email_recipient = (ctx.payload.kibana_settings.hits.total > 0) ? ctx.payload.kibana_settings.hits.hits[0]._source.kibana_settings.xpack.default_admin_email : null;ctx.vars.is_new = ctx.vars.fails_check && !ctx.vars.not_resolved;ctx.vars.is_resolve ...:347) ~[?:?]
+	... 12 more
+[2018-04-12T21:34:09,399][INFO ][o.e.c.m.MetaDataMappingService] [zVEhyW1] [.watcher-history-7-2018.04.13/uRVSiGfWRSSNsGJzVLnjbA] update_mapping [doc]
+[2018-04-12T23:26:46,136][INFO ][o.e.c.m.MetaDataCreateIndexService] [zVEhyW1] [.monitoring-logstash-6-2018.04.13] creating index, cause [auto(bulk api)], templates [.monitoring-logstash], shards [1]/[0], mappings [doc]
+[2018-04-12T23:27:12,875][INFO ][o.e.n.Node               ] [zVEhyW1] stopping ...
+[2018-04-12T23:27:12,879][INFO ][o.e.x.m.j.p.NativeController] Native controller process has stopped - no new native processes can be started
+[2018-04-12T23:27:12,888][INFO ][o.e.x.w.WatcherService   ] [zVEhyW1] stopping watch service, reason [shutdown initiated]
+[2018-04-12T23:27:13,613][INFO ][o.e.n.Node               ] [zVEhyW1] stopped
+[2018-04-12T23:27:13,614][INFO ][o.e.n.Node               ] [zVEhyW1] closing ...
+[2018-04-12T23:27:13,629][INFO ][o.e.n.Node               ] [zVEhyW1] closed
+[2018-04-12T23:27:17,579][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-04-12T23:27:17,632][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [100.3gb], net total_space [232.6gb], types [hfs]
+[2018-04-12T23:27:17,633][INFO ][o.e.e.NodeEnvironment    ] [zVEhyW1] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-04-12T23:27:17,708][INFO ][o.e.n.Node               ] node name [zVEhyW1] derived from node ID [zVEhyW1oRbOBEzrlT6he4A]; set [node.name] to override
+[2018-04-12T23:27:17,709][INFO ][o.e.n.Node               ] version[6.2.3], pid[56599], build[c59ff00/2018-03-13T10:06:29.741383Z], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_101/25.101-b13]
+[2018-04-12T23:27:17,710][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/4k/nbxcfp6n19scrsv83b2bp94hk_ngnj/T/elasticsearch.RSyBHHeY, -XX:+HeapDumpOnOutOfMemoryError, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/ac044474/workspace/elasticsearch-6.2.3, -Des.path.conf=/Users/ac044474/workspace/elasticsearch-6.2.3/config]
+[2018-04-12T23:27:19,268][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [aggs-matrix-stats]
+[2018-04-12T23:27:19,268][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [analysis-common]
+[2018-04-12T23:27:19,268][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [ingest-common]
+[2018-04-12T23:27:19,268][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-expression]
+[2018-04-12T23:27:19,268][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-mustache]
+[2018-04-12T23:27:19,268][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [lang-painless]
+[2018-04-12T23:27:19,268][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [mapper-extras]
+[2018-04-12T23:27:19,268][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [parent-join]
+[2018-04-12T23:27:19,268][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [percolator]
+[2018-04-12T23:27:19,269][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [rank-eval]
+[2018-04-12T23:27:19,269][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [reindex]
+[2018-04-12T23:27:19,269][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [repository-url]
+[2018-04-12T23:27:19,269][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [transport-netty4]
+[2018-04-12T23:27:19,269][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded module [tribe]
+[2018-04-12T23:27:19,270][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-core]
+[2018-04-12T23:27:19,270][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-deprecation]
+[2018-04-12T23:27:19,270][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-graph]
+[2018-04-12T23:27:19,270][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-logstash]
+[2018-04-12T23:27:19,270][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-ml]
+[2018-04-12T23:27:19,270][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-monitoring]
+[2018-04-12T23:27:19,270][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-security]
+[2018-04-12T23:27:19,270][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-upgrade]
+[2018-04-12T23:27:19,270][INFO ][o.e.p.PluginsService     ] [zVEhyW1] loaded plugin [x-pack-watcher]
+[2018-04-12T23:27:21,068][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/56621] [Main.cc@128] controller (64 bit): Version 6.2.3 (Build e43a9a2b267ef4) Copyright (c) 2018 Elasticsearch BV
+[2018-04-12T23:27:21,901][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2018-04-12T23:27:22,166][INFO ][o.e.d.DiscoveryModule    ] [zVEhyW1] using discovery type [zen]
+[2018-04-12T23:27:23,044][INFO ][o.e.n.Node               ] initialized
+[2018-04-12T23:27:23,044][INFO ][o.e.n.Node               ] [zVEhyW1] starting ...
+[2018-04-12T23:27:23,347][INFO ][o.e.t.TransportService   ] [zVEhyW1] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-04-12T23:27:26,451][INFO ][o.e.c.s.MasterService    ] [zVEhyW1] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{NB52SL_oS12JzadxKQ1WpA}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}
+[2018-04-12T23:27:26,455][INFO ][o.e.c.s.ClusterApplierService] [zVEhyW1] new_master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{NB52SL_oS12JzadxKQ1WpA}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {zVEhyW1}{zVEhyW1oRbOBEzrlT6he4A}{NB52SL_oS12JzadxKQ1WpA}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-04-12T23:27:26,470][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [zVEhyW1] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-04-12T23:27:26,470][INFO ][o.e.n.Node               ] [zVEhyW1] started
+[2018-04-12T23:27:27,054][INFO ][o.e.l.LicenseService     ] [zVEhyW1] license [92a7fc92-5e30-4bbe-9e43-299bfe91ef9b] mode [trial] - valid
+[2018-04-12T23:27:27,063][INFO ][o.e.g.GatewayService     ] [zVEhyW1] recovered [13] indices into cluster_state
+[2018-04-12T23:27:27,981][INFO ][o.e.c.r.a.AllocationService] [zVEhyW1] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-2018.04.12][1]] ...]).
+[2018-04-12T23:43:43,447][INFO ][o.e.c.m.MetaDataCreateIndexService] [zVEhyW1] [filebeat-2018.04.13] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2018-04-12T23:43:43,577][INFO ][o.e.c.m.MetaDataMappingService] [zVEhyW1] [filebeat-2018.04.13/Fo7-zEqoSbOm1poGwFJ3Lw] create_mapping [doc]
+[2018-04-12T23:46:23,440][INFO ][o.e.n.Node               ] [zVEhyW1] stopping ...
+[2018-04-12T23:46:23,441][INFO ][o.e.x.m.j.p.NativeController] Native controller process has stopped - no new native processes can be started
+[2018-04-12T23:46:23,451][INFO ][o.e.x.w.WatcherService   ] [zVEhyW1] stopping watch service, reason [shutdown initiated]
+[2018-04-12T23:46:23,784][INFO ][o.e.n.Node               ] [zVEhyW1] stopped
+[2018-04-12T23:46:23,784][INFO ][o.e.n.Node               ] [zVEhyW1] closing ...
+[2018-04-12T23:46:23,795][INFO ][o.e.n.Node               ] [zVEhyW1] closed
